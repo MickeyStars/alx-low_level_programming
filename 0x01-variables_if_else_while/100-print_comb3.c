@@ -8,21 +8,15 @@
 
 int main(void)
 {
-	int d,p;
+	int i;
 
-	for (d = 0; d < 9; d++)
+	for (i = 0; i < 10; i++)
 	{
-		for (p = d + 1; p <= 9; p++)
+		putchar(i + '0');
+		if (i != 9)
 		{
-			if (p != d)
-		{
-			putchar(d);
-			putchar(p);
-		if (d == 8 && p == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
-		}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
