@@ -8,24 +8,34 @@
 
 int main(void)
 {
-        int d,p;
+	int i, p;
 
-        for (d = 0; d < 9; d++)
-        {
-                for (p = d + 1; p <= 9; p++)
-                {
-                        if (p != d)
-                {
-                        putchar(d);
-                        putchar(p);
-                if (d == 8 && p == 9)
-                        continue;
-                putchar(',');
-                putchar(' ');
-                }
-                }
-        }
-        putchar('\n');
-        return (0);
+	for (i = '0'; i < '9'; i++)
+	{
+		for (p = i + 1; p <= '9'; p++)
+		{
+			if (p != i)
+			{
+				putchar(i);
+				putchar(p);
+				if (i == '8' && p == '9')
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+
+
+
+
+
+
+
+
+
+
 
 }
